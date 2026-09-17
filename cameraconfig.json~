@@ -1,0 +1,104 @@
+{
+  "camera": [
+    {
+      "disabled": false,
+      "serial": "000787922112",
+      "trafo": [
+        [
+          -0.017863105751757386,
+          0.9924836158788807,
+          -0.12106684791835692,
+          0.01724218989161419
+        ],
+        [
+          0.9864883517007115,
+          -0.002227717678579183,
+          -0.16381626669156085,
+          1.40825733815574
+        ],
+        [
+          -0.16285466346321678,
+          -0.12235730254434993,
+          -0.9790337323618401,
+          1.5821386180095023
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "type": "kinect"
+    },
+    {
+      "disabled": false,
+      "serial": "000844521012",
+      "trafo": [
+        [
+          0.26265747478903734,
+          0.022964073993218946,
+          0.9646158314288027,
+          -1.5201207337809914
+        ],
+        [
+          0.9648445913681978,
+          -0.015857299623683797,
+          -0.26234225842624326,
+          1.410099762787949
+        ],
+        [
+          0.009271755226667011,
+          0.9996105228309072,
+          -0.026321800864266335,
+          0.14203897868333198
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "type": "kinect"
+    }
+  ],
+  "postprocessing": {
+    "depthfilterparameters": {
+      "depth_x_erosion": 0,
+      "depth_y_erosion": 0,
+      "do_threshold": true,
+      "threshold_far": 6.0,
+      "threshold_near": 0.15
+    },
+    "greenscreenremoval": false,
+    "height_max": 1.8,
+    "height_min": 0.01,
+    "radius_filter": 1.3
+  },
+  "skeleton": {
+    "model_path": "",
+    "processing_mode": -1,
+    "sensor_orientation": -1
+  },
+  "system": {
+    "color_brightness": 128,
+    "color_contrast": 5,
+    "color_exposure_time": -1,
+    "color_gain": 0,
+    "color_height": 720,
+    "color_powerline_frequency": 2,
+    "color_saturation": 32,
+    "color_whitebalance": -1,
+    "depth_height": 576,
+    "fps": 30,
+    "ignore_sync": false,
+    "map_color_to_depth": false,
+    "new_timestamps": false,
+    "record_to_directory": "",
+    "single_tile": -1,
+    "sync_master_serial": ""
+  },
+  "type": "kinect",
+  "version": 3
+}

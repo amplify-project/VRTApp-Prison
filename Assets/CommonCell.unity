@@ -99071,6 +99071,96 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893709702}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &894122587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 894122590}
+  - component: {fileID: 894122589}
+  - component: {fileID: 894122588}
+  m_Layer: 0
+  m_Name: SecquencePlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &894122588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894122587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0885a5fe3a56cf04690a8fc44a1380a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drawBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 1.5, y: 1.5, z: 1.5}
+  bufferSize: 30
+  useAllThreads: 1
+  threadCount: 4
+  attachFrameDebugger: 0
+  frameDebugger: {fileID: 0}
+  customMaterial: {fileID: 0}
+  instantiateMaterial: 1
+  materialSlots: 1
+  customMaterialSlots: []
+  pointRenderPath: 2
+  pointSize: 0.02
+  pointEmission: 1
+  readerInitialized: 0
+  frameDropped: 0
+  framesDroppedCounter: 0
+  lastFrameBufferIndex: 0
+  targetFrameTimeMs: 0
+  lastFrameTime: 0
+  lastFrameIndex: 0
+  sequenceDeltaTime: 0
+  elapsedMsSinceSequenceStart: 0
+  smoothedFPS: 0
+--- !u!114 &894122589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894122587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2731264125d1524693cb97001b1cfc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  relativePath: C:\Users\karolina\Documents\CWI\Amplify\Opera\ExampleFromOliver\Converted
+  pathRelation: 0
+  playAtStart: 1
+  loopPlay: 1
+  playbackFPS: 30
+  playbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &894122590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894122587}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7, y: 0.15, z: 0.693}
+  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &894133750
 GameObject:
   m_ObjectHideFlags: 0
@@ -238582,3 +238672,4 @@ SceneRoots:
   - {fileID: 721163674}
   - {fileID: 1224703618}
   - {fileID: 1391257386}
+  - {fileID: 894122590}

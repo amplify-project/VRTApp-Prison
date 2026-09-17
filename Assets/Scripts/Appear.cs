@@ -18,7 +18,7 @@ public class Appear : NetworkCollider
 
     IEnumerator EnableAfterTime()
     {
-        yield return new WaitForSeconds(360.0f);
+        yield return new WaitForSeconds(60.0f);
         button.SetActive(true);
         sound.SetActive(true);
         nun.SetActive(true);
