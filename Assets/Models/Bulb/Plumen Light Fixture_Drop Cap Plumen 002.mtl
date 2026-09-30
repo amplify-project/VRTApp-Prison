@@ -1,0 +1,44 @@
+newmtl Cap
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd Plumen Light Fixture_Drop Cap Plumen 002_diffuse.tga
+map_Ks Plumen Light Fixture_Drop Cap Plumen 002_reflection.tga
+map_bump Plumen Light Fixture_Drop Cap Plumen 002_normal_map.tga
+newmtl CZARNE
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd Plumen Light Fixture_Drop Cap Plumen 002_diffuse.tga
+map_Ks Plumen Light Fixture_Drop Cap Plumen 002_reflection.tga
+map_bump Plumen Light Fixture_Drop Cap Plumen 002_normal_map.tga
+newmtl Light_Bulb
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd Plumen Light Fixture_Drop Cap Plumen 002_diffuse.tga
+map_Ks Plumen Light Fixture_Drop Cap Plumen 002_reflection.tga
+map_bump Plumen Light Fixture_Drop Cap Plumen 002_normal_map.tga
+newmtl KABEL
+Ns 100.000
+d 1.00000
+illum 2
+Kd 1.00000 1.00000 1.00000
+Ka 0.00000 0.00000 0.00000
+Ks 1.00000 1.00000 1.00000
+Ke 0.00000e+0 0.00000e+0 0.00000e+0
+map_Kd Plumen Light Fixture_Drop Cap Plumen 002_diffuse.tga
+map_Ks Plumen Light Fixture_Drop Cap Plumen 002_reflection.tga
+map_bump Plumen Light Fixture_Drop Cap Plumen 002_normal_map.tga
