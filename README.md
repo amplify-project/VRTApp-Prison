@@ -1,6 +1,8 @@
-# VR2Gather_sample
+# VRTApp-Prison
 
-This repository contains a sample Unity project that uses VR2Gather, `nl.cwi.dis.vr2gather`, a Unity package for creating social virtual reality applications.
+This repository contains a social VR application showcasing a virtual visit in 1970s female political prison in Francoist Spain. The experience is designed to be visited in pairs, and the visitors are represented using live volumetric videos (which is achieved by using VR2Gather unity package). During the visit the users move through various spaces of the prison, where they can explore, listen to the stories of ex-inmates (represented by volumetric video) and interact with their personal objects from the time of imprisonment - each of them having a symbolic meaning. These objects are represented either by gaussian splats or are AI generated from videos/photos of actual objects. The interaction with the objects is multimodal - the users can pick them up or touch them, which triggers sound effects and voiceovers. 
+
+To be able to run the experience with live volumetric representation of the users, a specific hardware setup is required. You can find the description of hardware requirement and setup here: https://www.dis.cwi.nl/vr2gather/hardware/
 
 More information on VR2Gather itself can be found at its repository, <https://github.com/cwi-dis/VR2Gather>.
 
