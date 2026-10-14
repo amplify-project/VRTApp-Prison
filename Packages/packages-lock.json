@@ -382,7 +382,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "202e7cc70fc3fb2f45d24f350351ba021a8c46ec"
+      "hash": "f05226d91af9531c1bef01501f58bbbfd269afde"
     },
     "nl.cwi.dis.vr2gather": {
       "version": "git+https://github.com/cwi-dis/VR2Gather?path=/nl.cwi.dis.vr2gather",
@@ -410,7 +410,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "47bf010a37e96a3c5532abf7da898caad15104b6"
+      "hash": "1c4eaf67bae730b51684534a1e74a3d1eae15880"
     },
     "nl.cwi.dis.vr2gather.nativelibraries.webrtc": {
       "version": "git+https://github.com/cwi-dis/VR2G-nativeLibraries-webrtc?path=/nl.cwi.dis.vr2gather.nativelibraries.webrtc",
