@@ -2,8 +2,8 @@
     "userName": "giraffe",
     "representation": 1,
     "representation_str": "SimpleAvatar",
-    "webcamName": "None",
-    "microphoneName": "None",
+    "webcamName": "",
+    "microphoneName": "",
     "userRepresentationTCPUrl": "",
     "RepresentationPointcloudConfig": {
         "variant": 0,
