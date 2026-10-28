@@ -62191,7 +62191,7 @@ MonoBehaviour:
   interval: 0.8
   startDelay: 1
   effect: 1
-  growDuration: 1
+  growDuration: 2
   growCurve:
     serializedVersion: 2
     m_Curve:
@@ -62216,6 +62216,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  fadeMaterial: {fileID: 2100000, guid: f4a456913ed572c43967789c73e8027f, type: 2}
 --- !u!4 &1372633108
 Transform:
   m_ObjectHideFlags: 0

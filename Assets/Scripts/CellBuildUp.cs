@@ -1,4 +1,5 @@
 using System.Collections;
+using GaussianSplatting.Runtime;
 using UnityEngine;
 
 // Hides the furnishings of a cell at scene load, then reveals them step by step when Begin() is called.
@@ -29,6 +30,16 @@ public class CellBuildUp : MonoBehaviour
     [Tooltip("Seconds the effect takes. 0 makes objects pop in at once.")]
     public float growDuration = 0.8f;
     public AnimationCurve growCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    [Tooltip("Fade only. A URP Lit material set to Surface Type: Transparent. While fading, each object is drawn with a copy of this, using its own base color and texture.")]
+    public Material fadeMaterial;
+
+    static readonly string[] colorProps = { "_BaseColor", "_Color", "baseColorFactor", "_BaseColorFactor" };
+    static readonly string[] textureProps = { "_BaseMap", "_MainTex", "baseColorTexture", "_BaseColorTexture" };
+
+    static string ColorProp(Material m)
+    {
+        return m.HasProperty("_BaseColor") ? "_BaseColor" : "_Color";
+    }
 
     bool started;
 
@@ -98,6 +109,26 @@ public class CellBuildUp : MonoBehaviour
             for (int j = 0; j < copies.Length; j++)
             {
                 var m = originals[i][j];
+                if (m != null && fadeMaterial != null)
+                {
+                    var stand = new Material(fadeMaterial);
+                    string standColor = ColorProp(stand);
+                    string standTexture = stand.HasProperty("_BaseMap") ? "_BaseMap" : "_MainTex";
+                    foreach (var p in colorProps)
+                    {
+                        if (m.HasProperty(p)) { stand.SetColor(standColor, m.GetColor(p)); break; }
+                    }
+                    foreach (var p in textureProps)
+                    {
+                        if (m.HasProperty(p)) { stand.SetTexture(standTexture, m.GetTexture(p)); break; }
+                    }
+                    var sc = stand.GetColor(standColor);
+                    sc.a = 0f;
+                    stand.SetColor(standColor, sc);
+                    copies[j] = stand;
+                    fading.Add(stand);
+                    continue;
+                }
                 if (m == null || !m.HasProperty("_BaseColor") || !m.HasProperty("_Surface"))
                 {
                     copies[j] = m; // unsupported shader: stays as is and pops in
@@ -121,6 +152,14 @@ public class CellBuildUp : MonoBehaviour
             }
             renderers[i].sharedMaterials = copies;
         }
+        // Gaussian splats have no materials of their own to fade, so animate their opacity scale instead.
+        var splats = obj.GetComponentsInChildren<GaussianSplatRenderer>(true);
+        var splatOpacity = new float[splats.Length];
+        for (int i = 0; i < splats.Length; i++)
+        {
+            splatOpacity[i] = splats[i].m_OpacityScale;
+            splats[i].m_OpacityScale = 0f;
+        }
         obj.SetActive(true);
 
         float elapsed = 0f;
@@ -128,15 +167,18 @@ public class CellBuildUp : MonoBehaviour
         {
             elapsed += Time.deltaTime;
             float a = growCurve.Evaluate(Mathf.Clamp01(elapsed / growDuration));
+            for (int i = 0; i < splats.Length; i++) splats[i].m_OpacityScale = splatOpacity[i] * a;
             foreach (var m in fading)
             {
-                var c = m.GetColor("_BaseColor");
+                string prop = ColorProp(m);
+                var c = m.GetColor(prop);
                 c.a = a;
-                m.SetColor("_BaseColor", c);
+                m.SetColor(prop, c);
             }
             yield return null;
         }
 
+        for (int i = 0; i < splats.Length; i++) splats[i].m_OpacityScale = splatOpacity[i];
         for (int i = 0; i < renderers.Length; i++) renderers[i].sharedMaterials = originals[i];
         foreach (var m in fading) Destroy(m);
     }
