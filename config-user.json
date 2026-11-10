@@ -1,9 +1,9 @@
 {
-    "userName": "giraffe",
-    "representation": 1,
-    "representation_str": "SimpleAvatar",
+    "userName": "topinambur",
+    "representation": 0,
+    "representation_str": "PointCloud",
     "webcamName": "",
-    "microphoneName": "",
+    "microphoneName": "Headset Microphone (Oculus Virtual Audio Device)",
     "userRepresentationTCPUrl": "",
     "RepresentationPointcloudConfig": {
         "variant": 0,
