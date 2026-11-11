@@ -81,8 +81,7 @@
         "acceptDesyncOnDataUnavailable": false
     },
     "PointCloudTransmissionConfig": {
-        "tiled": false,
-        "EncoderConfigs": []
+        "tiled": false
     },
     "TileSelectorConfig": {
         "algorithm": "",
