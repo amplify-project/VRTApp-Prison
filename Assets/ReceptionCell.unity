@@ -23074,8 +23074,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.93995017, y: 6.109111, z: 1.4669585}
-  m_Center: {x: -0.1810991, y: 4.4759355, z: -0.11043412}
+  m_Size: {x: 1.3490711, y: 5.0101175, z: 0.4007508}
+  m_Center: {x: 1.2871927, y: 5.0254374, z: -0.643522}
 --- !u!114 &1268021711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41074,7 +41074,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PairedZoneSwitch
   zones:
   - {fileID: 1552010024}
-  - {fileID: 724555816}
+  requireAll: 0
+  delay: 5
   OnAllOccupied:
     m_PersistentCalls:
       m_Calls:
