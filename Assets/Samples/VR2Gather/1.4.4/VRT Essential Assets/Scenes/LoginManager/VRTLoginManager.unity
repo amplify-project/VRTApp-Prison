@@ -287,7 +287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3332811912419026047, guid: 47b913c86ce41406b8395bf54f7abf91, type: 3}
       propertyPath: scenarios.Array.data[0].scenarioSceneName
-      value: CommonCell
+      value: ReceptionCell
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

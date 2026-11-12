@@ -1799,7 +1799,7 @@ MonoBehaviour:
           m_StringArgument: CommonCell
           m_BoolArgument: 0
         m_CallState: 2
-  delay: 30
+  delay: 32
 --- !u!4 &171223997
 Transform:
   m_ObjectHideFlags: 0
