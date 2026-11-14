@@ -4420,6 +4420,10 @@ PrefabInstance:
       propertyPath: NetworkId
       value: 030d604e-156e-460d-8e2d-6e9a6a2a41a2
       objectReference: {fileID: 0}
+    - target: {fileID: 8986487314374434884, guid: 9908dcf284aef0e4a8ba245dc5f0f080, type: 3}
+      propertyPath: autoShowMessages
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
