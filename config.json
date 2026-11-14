@@ -52,7 +52,7 @@
     },
     "CwipcConfig": {
         "logLevel": 2,
-        "overrideNativeLoadPath": "",
+        "overrideNativeLoadPath": "C:\\Program Files\\cwipc 8.0.0\\bin",
         "Codec": "cwi1",
         "defaultCellSize": 0.0,
         "cellSizeFactor": 0.0,
